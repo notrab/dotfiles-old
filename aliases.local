@@ -1,0 +1,44 @@
+alias zshconfig="v ~/.zshrc"
+alias ohmyzsh="v ~/.oh-my-zsh"
+
+alias path='echo $PATH | tr -s ":" "\n"'
+alias rr="rbenv rehash"
+
+alias code="cd ~/code"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias o="open ."
+
+alias l="ls -l"
+alias ll="ls -al"
+
+alias b="bundle install"
+alias be="bundle exec"
+alias bake="be rake"
+alias rspec="be rspec"
+alias dbm="be rake db:migrate"
+alias dbr="be rake db:rollback"
+alias rg="be rails generate"
+alias rr="be rails runner"
+alias rc="be rails console"
+alias fs="be foreman s"
+alias fsd="be foreman s -f Procfile.development"
+
+alias v="vim"
+alias a="atom ."
+
+alias gp="git push"
+alias gpull="git pull"
+alias gb="git branch"
+alias ga="git add -p"
+alias gs="git status"
+alias gaa="git add --all"
+alias gc="git commit"
+alias gm="git merge"
+alias gco="git checkout -b"
+alias gph="git push heroku"
+alias deploy-production!="git push production master"
+alias deploy-staging!="git push staging master"
+
+alias tlog="tail -f log/development.log"
