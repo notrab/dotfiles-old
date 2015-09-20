@@ -4,6 +4,7 @@ alias ohmyzsh="v ~/.oh-my-zsh"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias rr="rbenv rehash"
 
+alias nsl="cd ~/code/work/norseal"
 alias code="cd ~/code"
 
 alias ..="cd .."
@@ -19,11 +20,13 @@ alias bake="be rake"
 alias rspec="be rspec"
 alias dbm="be rake db:migrate"
 alias dbr="be rake db:rollback"
+alias dbrm="be rake db:migrate db:rollback && be rake db:migrate
 alias rg="be rails generate"
 alias rr="be rails runner"
 alias rc="be rails console"
 alias fs="be foreman s"
 alias fsd="be foreman s -f Procfile.development"
+alias install-missing="brew update && brew upgrade ruby-build && rbenv install"
 
 alias v="vim"
 alias a="atom ."
@@ -38,7 +41,10 @@ alias gc="git commit"
 alias gm="git merge"
 alias gco="git checkout -b"
 alias gph="git push heroku"
-alias deploy-production!="git push production master"
-alias deploy-staging!="git push staging master"
+alias production!="git push production master"
+alias staging!="git push staging master"
 
 alias tlog="tail -f log/development.log"
+
+alias flush-cache="sudo discoveryutil mdnsflushcache; sudo discoveryutil
+udnsflushcaches"
