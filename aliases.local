@@ -6,6 +6,7 @@ alias rr="rbenv rehash"
 
 alias nsl="cd ~/code/work/norseal"
 alias code="cd ~/code"
+alias d="cd ~/dotfiles-local"
 
 alias ..="cd .."
 alias ...="cd ../.."

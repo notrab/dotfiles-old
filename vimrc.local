@@ -1,17 +1,13 @@
 set encoding=utf-8
 set relativenumber
 set cursorline
-" set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
-
-" set fillchars+=stl:\ ,stlnc:\
 
 colorscheme monokai
 let g:molokai_origin = 1
 let g:rehash256 = 1
 
-" let g:Powerline_symbols = 'fancy'
 let g:airline_powerline_fonts = 1
-let g:tmuxline_powerline_separators = 0
+" let g:tmuxline_powerline_separators = 0
 
 autocmd VimResized * :wincmd =
 autocmd FocusLost * :wa        " autosave when file focus is lost
@@ -46,6 +42,7 @@ let NERDTreeDirArrows=1
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
+let NERDTreeSortOrder = ['\/$', '\.js*', '\.cpp$', '\.h$', '*']
 
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_max_height = 30

@@ -22,15 +22,10 @@ bind-key b break-pane -d
 
 set -g default-terminal "screen-256color"
 
-set-option -g status on
-set-option -g status-interval 2
-set-option -g status-utf8 on
-set-option -g status-justify "centre"
-set-option -g status-left-length 60
-set-option -g status-right-length 90
-set-option -g status-left "#(~/.vim/bundle/tmux-powerline/powerline.sh left)"
-set-option -g status-right "#(~/.vim/bundle/tmux-powerline/powerline.sh right)"
-set-window-option -g window-status-current-format "#[fg=colour235, bg=colour27]⮀#[fg=colour255, bg=colour27] #I ⮁ #W #[fg=colour27, bg=colour235]⮀"
+set -g status-left "#[fg=colour16,bg=colour254,bold] #S #[fg=colour254,bg=colour234,nobold,nounderscore,noitalics]"
+set -g status-right "#[fg=colour236,bg=colour234,nobold,nounderscore,noitalics]#[fg=colour247,bg=colour236] %Y-%m-%d | %H:%M "
+setw -g window-status-format "#[fg=colour244,bg=colour234] #I |#[fg=colour250,bg=colour234] #W "
+setw -g window-status-current-format "#[fg=colour234,bg=colour31,nobold,nounderscore,noitalics]#[fg=colour117,bg=colour31] #I |#[fg=colour231,bg=colour31,bold] #W #[fg=colour31,bg=colour234,nobold,nounderscore,noitalics]"
 
 bind -n S-Left resize-pane -L 2
 bind -n S-Right resize-pane -R 2
