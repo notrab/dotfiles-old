@@ -46,5 +46,4 @@ alias staging!="git push staging master"
 
 alias tlog="tail -f log/development.log"
 
-alias flush-cache="sudo discoveryutil mdnsflushcache; sudo discoveryutil
-udnsflushcaches"
+alias flush-cache="sudo discoveryutil mdnsflushcache; sudo discoveryutil udnsflushcaches"
