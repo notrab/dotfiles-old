@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo "Show the ~/Library folder."
 chflags nohidden ~/Library
 
