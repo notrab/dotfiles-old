@@ -20,7 +20,7 @@ alias bake="be rake"
 alias rspec="be rspec"
 alias dbm="be rake db:migrate"
 alias dbr="be rake db:rollback"
-alias dbrm="be rake db:migrate db:rollback && be rake db:migrate
+alias dbrm="be rake db:migrate db:rollback && be rake db:migrate"
 alias rg="be rails generate"
 alias rr="be rails runner"
 alias rc="be rails console"
@@ -45,5 +45,3 @@ alias production!="git push production master"
 alias staging!="git push staging master"
 
 alias tlog="tail -f log/development.log"
-
-alias flush-cache="sudo discoveryutil mdnsflushcache; sudo discoveryutil udnsflushcaches"

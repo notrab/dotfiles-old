@@ -47,5 +47,24 @@ autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_max_height = 30
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_match_window_reversed = 0
+
+map <leader>a :Ag!<space>
+
 " iunmap <S-Tab>
 let g:snippetsEmu_key = "<S-Tab>"
+
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'))
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
+endfunction
+map <leader>n :call RenameFile()<cr>
+
