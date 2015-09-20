@@ -1,0 +1,25 @@
+#!/bin/sh
+
+brew_tap 'caskroom/cask'
+brew_install_or_upgrade 'brew-cask'
+
+fancy_echo "Installing Casks..."
+
+brew cask install google-chrome
+brew cask install slack
+
+brew cask install alfred
+
+brew cask install mongodb
+brew cask install ngrok
+
+brew cask install atom
+brew cask install iterm2
+
+brew cask install spotify
+brew cask install vlc
+
+brew install Caskroom/cask/java
+brew install elasticsearch
+
+fancy_echo "Done :-)."
