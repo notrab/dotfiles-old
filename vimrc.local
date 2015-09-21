@@ -2,10 +2,12 @@ set encoding=utf-8
 set relativenumber
 set cursorline
 
+" Colours
 colorscheme monokai
 let g:molokai_origin = 1
 let g:rehash256 = 1
 
+" Airline (powerline)
 let g:airline_powerline_fonts = 1
 let g:tmuxline_powerline_separators = 1
 let g:airline#extensions#tmuxline#enabled = 0
@@ -24,6 +26,7 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,perl,tex set shiftwidth=2
 autocmd FileType c,cpp,java,javascript,python,xml,xhtml,html set shiftwidth=2
 
+" Linters / JSX
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
@@ -45,6 +48,7 @@ if has("autocmd")
   filetype indent plugin on
 endif
 
+" NERDTree
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 autocmd vimenter * NERDTree
@@ -52,6 +56,7 @@ autocmd VimEnter * wincmd p
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
 let NERDTreeSortOrder = ['\/$', '\.js*', '\.cpp$', '\.h$', '*']
 
+" CtrlP
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_max_height = 30
 let g:ctrlp_working_path_mode = 0
@@ -59,8 +64,21 @@ let g:ctrlp_match_window_reversed = 0
 
 map <leader>a :Ag!<space>
 
+" Snippets
 iunmap <S-Tab>
 let g:snippetsEmu_key = "<S-Tab>"
+
+" Tab leaders
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
 
 function! RenameFile()
   let old_name = expand('%')
