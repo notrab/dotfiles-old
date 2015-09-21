@@ -7,3 +7,11 @@
 ## Install
 1. Clone this repo into `~/dotfiles-local`
 2. Run `rcup`
+
+### OSX Hacks
+This script modifies some of OSX and sets sensible defaults. Make sure to read
+through it before running.
+
+``` bash
+% zsh ~/dotfiles-local/extras/osx
+```

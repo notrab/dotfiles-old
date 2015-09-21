@@ -1,0 +1,10 @@
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+TAGS
+*.un~
+Session.vim
+.sass-cache
+public/assets
