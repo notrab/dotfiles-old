@@ -13,5 +13,5 @@ This script modifies some of OSX and sets sensible defaults. Make sure to read
 through it before running.
 
 ``` bash
-% zsh ~/dotfiles-local/extras/osx
+% zsh ~/dotfiles-local/bin/osx
 ```
