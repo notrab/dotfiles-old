@@ -4,7 +4,6 @@ alias ohmyzsh="v ~/.oh-my-zsh"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias rr="rbenv rehash"
 
-alias nsl="cd ~/code/work/norseal"
 alias code="cd ~/code"
 alias d="cd ~/dotfiles-local"
 
@@ -14,6 +13,15 @@ alias o="open ."
 
 alias l="ls -l"
 alias ll="ls -al"
+
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias b="bundle install"
 alias be="bundle exec"
