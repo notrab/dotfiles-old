@@ -6,6 +6,8 @@ alias rr="rbenv rehash"
 
 alias code="cd ~/code"
 alias d="cd ~/dotfiles-local"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
 
 alias ..="cd .."
 alias ...="cd ../.."
