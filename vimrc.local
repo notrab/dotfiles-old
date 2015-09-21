@@ -7,7 +7,8 @@ let g:molokai_origin = 1
 let g:rehash256 = 1
 
 let g:airline_powerline_fonts = 1
-" let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1
+let g:airline#extensions#tmuxline#enabled = 0
 
 autocmd VimResized * :wincmd =
 autocmd FocusLost * :wa        " autosave when file focus is lost
