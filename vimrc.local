@@ -37,6 +37,10 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nmap <Leader><Leader> v
 
+nmap <Leader>d :Dispatch
+nmap <Leader>z :Start zsh<CR>
+nmap <Leader>c :Start rails console<CR>
+
 if has("autocmd")
   filetype indent plugin on
 endif
@@ -55,7 +59,7 @@ let g:ctrlp_match_window_reversed = 0
 
 map <leader>a :Ag!<space>
 
-" iunmap <S-Tab>
+iunmap <S-Tab>
 let g:snippetsEmu_key = "<S-Tab>"
 
 function! RenameFile()
