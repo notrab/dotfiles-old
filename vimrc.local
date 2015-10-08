@@ -55,14 +55,6 @@ nmap <Leader>d :Dispatch
 nmap <Leader>z :Start zsh<CR>
 nmap <Leader>c :Start rails console<CR>
 
-nmap <D-]> >>
-vnoremap <D-]><CR>gv
-imap <D-]> <C-O>>>
-
-nmap <D-[> <<
-vnoremap <D-[> <<CR>gv
-imap <D-]> <C-O><<
-
 if has("autocmd")
   filetype indent plugin on
 endif
