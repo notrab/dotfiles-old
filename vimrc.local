@@ -55,17 +55,27 @@ nmap <Leader>d :Dispatch
 nmap <Leader>z :Start zsh<CR>
 nmap <Leader>c :Start rails console<CR>
 
+nmap <D-]> >>
+vnoremap <D-]><CR>gv
+imap <D-]> <C-O>>>
+
+nmap <D-[> <<
+vnoremap <D-[> <<CR>gv
+imap <D-]> <C-O><<
+
 if has("autocmd")
   filetype indent plugin on
 endif
 
 " NERDTree
+let NERDTreeSortOrder = ['\/$', '\.js*', '\.cpp$', '\.h$', '*']
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 nmap <silent> <Leader>p :NERDTreeToggle<CR>
-let NERDTreeSortOrder = ['\/$', '\.js*', '\.cpp$', '\.h$', '*']
+map <leader>r :NERDTreeFind<CR>
+map <leader>o :NERDTree<CR>
 
 " CtrlP
 let g:ctrlp_map = '<leader>f'
