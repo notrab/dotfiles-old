@@ -5,7 +5,8 @@ bind-key C-b last-pane
 
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
-if-shell "test if default_tmuxline" "source-file default_tmuxline"
+source-file ./.default_tmuxline
+# if-shell "test if default_tmuxline" "source-file default_tmuxline"
 
 is_vim='echo "#{pane_current_command}" | grep -iqE "(^|\/)g?(view|n?vim?)(diff)?$"'
 bind -n C-h if-shell "$is_vim" "send-keys C-h" "select-pane -L"
