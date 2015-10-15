@@ -62,13 +62,6 @@ if has("autocmd")
   filetype indent plugin on
 endif
 
-autocmd BufWritePre * :%s/\s\+$//e
-
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
-
 " NERDTree
 let NERDTreeSortOrder = ['\/$', '\.js*', '\.cpp$', '\.h$', '*']
 let NERDTreeMinimalUI=1
