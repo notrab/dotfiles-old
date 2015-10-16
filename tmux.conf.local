@@ -6,7 +6,6 @@ bind-key C-b last-pane
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
 source-file ./.default_tmuxline
-# if-shell "test if default_tmuxline" "source-file default_tmuxline"
 
 is_vim='echo "#{pane_current_command}" | grep -iqE "(^|\/)g?(view|n?vim?)(diff)?$"'
 bind -n C-h if-shell "$is_vim" "send-keys C-h" "select-pane -L"
@@ -34,7 +33,7 @@ bind -n C-Right resize-pane -R 10
 bind -n C-Down resize-pane -D 5
 bind -n C-Up resize-pane -U 5
 
-# setw -g mode-mouse off
+setw -g mode-mouse off
 
 set -g history-limit 5000
 
