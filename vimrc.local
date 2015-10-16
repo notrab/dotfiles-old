@@ -1,9 +1,6 @@
 set encoding=utf-8
 set relativenumber
 set cursorline
-set mouse=a
-set ttyfast
-set ttymouse=xterm2
 set fo-=t
 
 colorscheme monokai
