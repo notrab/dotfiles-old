@@ -2,7 +2,12 @@ set encoding=utf-8
 set relativenumber
 set cursorline
 set fo-=t
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
+set noshowmode
 
+set background=dark
 colorscheme monokai
 let g:molokai_origin = 1
 let g:rehash256 = 1
@@ -17,6 +22,9 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 autocmd BufRead,BufNewFile *.slim set ft=slim
 autocmd BufRead,BufNewFile {Gemfile,Rakefile,config.ru} set ft=ruby
+autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
+autocmd FileType ruby,eruby,yaml setlocal path+=lib
+autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -101,3 +109,4 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
+map K <Nop>

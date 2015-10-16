@@ -60,15 +60,6 @@ defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 echo "Display full POSIX path as Finder window title."
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-echo "Show Path bar in Finder."
-defaults write com.apple.finder ShowPathbar -bool true
-
-echo "Show Status bar in Finder."
-defaults write com.apple.finder ShowStatusBar -bool true
-
-echo "Show all filename extensions in Finder."
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 echo "Use current directory as default search scope in Finder."
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
@@ -87,8 +78,6 @@ defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
 
 echo "Tame Time Machine alerts"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-echo "Changed defaults. Restarting apps…"
 
 echo "Restart Finder."
 killall Finder
