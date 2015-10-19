@@ -2,19 +2,11 @@ set encoding=utf-8
 set relativenumber
 set cursorline
 set fo-=t
-<<<<<<< HEAD
 set noesckeys
 set ttimeout
 set ttimeoutlen=1
 set noshowmode
 
-set background=dark
-colorscheme monokai
-let g:molokai_origin = 1
-=======
-set noshowmode
-
->>>>>>> Changed theme to solarized-dark
 let g:rehash256 = 1
 let g:airline_powerline_fonts = 1
 let g:tmuxline_powerline_separators = 1
