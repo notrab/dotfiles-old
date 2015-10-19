@@ -6,6 +6,7 @@ brew_install_or_upgrade 'brew-cask'
 fancy_echo "Installing Casks..."
 
 brew cask install google-chrome
+brew cask install firefox
 brew cask install slack
 
 brew cask install alfred
@@ -22,4 +23,4 @@ brew cask install vlc
 brew install Caskroom/cask/java
 brew install elasticsearch
 
-fancy_echo "Done :-)."
+fancy_echo "Done."

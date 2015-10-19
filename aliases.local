@@ -5,9 +5,11 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias rr="rbenv rehash"
 
 alias code="cd ~/code"
-alias d="cd ~/dotfiles-local"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+
+alias d="cd ~/dotfiles-local"
+alias aliases="vim ~/dotfiles-local/aliases.local"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -40,7 +42,8 @@ alias fsd="be foreman s -f Procfile.development"
 alias install-missing="brew update && brew upgrade ruby-build && rbenv install"
 
 alias v="vim"
-alias a="atom ."
+alias vi="vim"
+alias vin="code ~/code/work/norseal && v"
 
 alias gp="git push"
 alias gpull="git pull"
@@ -52,7 +55,18 @@ alias gc="git commit"
 alias gm="git merge"
 alias gco="git checkout -b"
 alias gph="git push heroku"
-alias production!="git push production master"
-alias staging!="git push staging master"
+alias amend="git commit --amend"
 
-alias tlog="tail -f log/development.log"
+
+# Heroku staging
+alias staging-console='heroku run console --remote staging'
+alias staging-tail='heroku logs --tail --remote staging'
+
+# Heroku production
+alias production-console='heroku run console --remote production'
+alias production-tail='heroku logs --tail --remote production'
+
+# Heroku databases
+alias db-pull-staging='staging backup && development restore staging'
+alias db-pull-production='production backup && development restore production'
+alias db-copy-production-to-staging='production backup && staging restore production'
