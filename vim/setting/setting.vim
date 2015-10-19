@@ -10,8 +10,17 @@ set expandtab
 " Always show the statusline
 set laststatus=2
 
+" Enable syntax highlighting
+syntax enable
+
+" Set a dark background
+set background=dark
+
+" Set solarized as our theme (Plugin: )
+colorscheme solarized
+
 " Fix broken arrow key navigation in insert mode
-set term=builtin_ansi
+" set term=builtin_ansi
 
 " tab = 2 spaces
 set tabstop=2
@@ -44,9 +53,6 @@ set smartcase
 
 " Disable word wrap
 set nowrap
-
-" Needed for snipMate
-filetype plugin on
 
 " Search while typing
 set incsearch
@@ -107,9 +113,3 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:rehash256 = 1
