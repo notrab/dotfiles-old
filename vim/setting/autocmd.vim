@@ -1,3 +1,8 @@
+" Syntax Highlight
+if has("autocmd")
+  filetype indent on
+endif
+
 " Auto resizing for gvim splits"
 if has("gui_running")
   autocmd VimResized * wincmd =
@@ -31,8 +36,3 @@ autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
 autocmd FileType ruby,eruby,yaml setlocal path+=lib
 autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
 autocmd FileType make setlocal noexpandtab
-
-if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
-endif

@@ -16,13 +16,12 @@ set term=builtin_ansi
 " tab = 2 spaces
 set tabstop=2
 
+set fo-=t
+
 " Indent to two spaces
 " --------------------
 set shiftwidth=2
 set softtabstop=2
-
-" Set solarized as our theme (Plugin: )
-colorscheme solarized
 
 " Don't show insert message
 set noshowmode
@@ -112,3 +111,5 @@ let g:syntastic_javascript_checkers = ['eslint']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+let g:rehash256 = 1
