@@ -5,3 +5,8 @@ if which tmux 2>&1 >/dev/null; then
 fi
 
 eval "$(rbenv init -)"
+export PATH="$HOME/.node/bin:$PATH"
+export PATH=$PATH:/usr/local/share/npm/bin
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"
+export PATH=$PATH:/usr/local/share/npm/bin
