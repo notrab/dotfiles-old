@@ -47,18 +47,8 @@ set history=250
 " Highlight background of current line
 set cursorline
 
-" Set ignorecase
-" Lowercase = case insensitive, any uppercase = case sensitive
-set smartcase
-
 " Disable word wrap
 set nowrap
-
-" Search while typing
-set incsearch
-
-" Highlight all search results
-set hlsearch
 
 " Snippets
 let g:snippetsEmu_key = "<S-Tab>"
@@ -91,20 +81,6 @@ let g:tmuxline_powerline_separators = 1
 let g:tmuxline_theme = 'airline'
 let g:airline#extensions#tmuxline#enabled = 0
 
-" CtrlP
-" -----
-let g:ctrlp_max_height = 20
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_match_window_reversed = 0
-
-" Stolen from Brandon Hilkert's Dotfiles
-" --------------------------------------
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_use_caching = 0
-endif
-
 " Syntastic
 " ---------
 let g:syntastic_always_populate_loc_list = 1
@@ -113,3 +89,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Persistent undo
+set undofile
+set undodir=~/.vim/undo
+set undolevels=1000
+set undoreload=10000
