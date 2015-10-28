@@ -23,4 +23,7 @@ brew cask install vlc
 brew install Caskroom/cask/java
 brew install elasticsearch
 
+brew tap Goles/battery
+brew install battery
+
 fancy_echo "Done."

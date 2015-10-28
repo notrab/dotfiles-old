@@ -1,10 +1,9 @@
 let g:tmuxline_preset = {
   \'a'    : '#S',
-  \'c'    : ['#(whoami)'],
-  \'win'  : ['#I', '#W'],
+  \'c'    : ['#I', '#W'],
   \'cwin' : ['#I', '#W', '#F'],
   \'y'    : ['%R', '%a', '%Y'],
-  \'z'    : '#(~/.bin/battery.sh)'}
+  \'z'    : ['#(whoami)']}
 
 source $HOME/.vim/setting/function.vim
 source $HOME/.vim/setting/autocmd.vim

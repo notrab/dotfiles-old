@@ -20,8 +20,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 " Define all markdown extensions
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
-" Set wrap for markdown"
-autocmd FileType markdown setlocal wrap
+autocmd FileType markdown setlocal wrap " Set wrap for markdown
 
 " Set slim formatting
 autocmd BufRead,BufNewFile *.slim set ft=slim

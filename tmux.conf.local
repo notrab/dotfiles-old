@@ -21,8 +21,6 @@ bind c new-window -c '#{pane_current_path}'
 
 bind-key b break-pane -d
 
-set -g default-terminal "screen-256color"
-
 bind -n S-Left resize-pane -L 2
 bind -n S-Right resize-pane -R 2
 bind -n S-Down resize-pane -D 1
@@ -41,5 +39,4 @@ set-window-option -g alternate-screen on
 
 set -s escape-time 0
 
-setw -g mode-mouse on
 setw -g automatic-rename on

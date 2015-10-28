@@ -30,12 +30,6 @@ let g:ctrlp_map = '<leader>f'
 " CtrlPTag
 nnoremap <leader>. :CtrlPTag<cr>
 
-" Toggle NERDTree
-nmap <silent> <Leader>p :NERDTreeToggle<CR>
-
-" Find file in NERDTree
-noremap <leader>r :NERDTreeFind<cr>
-
 " Call our RenameFile function
 map <leader>n :call RenameFile()<cr>
 
