@@ -1,5 +1,5 @@
 " Ag
-map <leader>g:Ag!<space>
+map <leader>g :Ag!<space>
 
 " Tab leaders
 noremap <leader>1 1gt
