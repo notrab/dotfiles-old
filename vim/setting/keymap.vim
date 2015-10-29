@@ -1,5 +1,5 @@
 " Ag
-map <leader>a :Ag!<space>
+map <leader>g:Ag!<space>
 
 " Tab leaders
 noremap <leader>1 1gt
@@ -46,10 +46,15 @@ iunmap <S-Tab>
 map K <Nop>
 
 " Search tags in current bugger
-map <Leader>t :CtrlPBufTag<CR>
+" map <Leader>t :CtrlPBufTag<CR>
 
 " Search buggers
 noremap <leader>b :CtrlPBuffer<cr>
 
 " vim-rspec tpope/dispatch
 let g:rspec_command = "Dispatch bin/rspec {spec}"
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
