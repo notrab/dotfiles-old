@@ -15,6 +15,7 @@ set ignorecase smartcase
 set gdefault              " assume /g flag is on
 set nowrap                " disable wrap
 set pastetoggle=<F2>      " paste toggle
+set nocompatible
 
 " Highlight all search results
 if &t_Co > 2 || has("gui_running")
@@ -29,7 +30,7 @@ let g:snippetsEmu_key = "<S-Tab>"
 set wildignore+=tmp/**,*.scssc,*.sassc,*/bower_components/*,*/node_modules/*,*.jpg,*.png,*.gif,*.pdf
 
 " JSX
-let g:jsx_ext_required = 0
+let g:jsx_ext_required = 1
 
 " Error beeping
 set novisualbell
