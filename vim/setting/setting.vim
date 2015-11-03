@@ -36,14 +36,6 @@ let g:jsx_ext_required = 1
 set novisualbell
 set errorbells
 
-" Airline
-let g:airline_powerline_fonts = 1
-
-" Tmuxline
-let g:tmuxline_powerline_separators = 1
-let g:tmuxline_theme = 'airline'
-let g:airline#extensions#tmuxline#enabled = 0
-
 " CtrlP
 let g:ctrlp_max_height = 20
 let g:ctrlp_working_path_mode = 0
