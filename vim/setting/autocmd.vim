@@ -9,10 +9,7 @@ if has("autocmd")
   filetype indent on
 endif
 
-" Auto resizing for gvim splits"
-if has("gui_running")
-  autocmd VimResized * wincmd =
-endif
+autocmd VimResized * wincmd =
 
 " Enable JSON formatting
 autocmd BufNewFile,BufRead *.json set ft=javascript
@@ -41,3 +38,9 @@ autocmd FileType ruby,eruby,yaml setlocal iskeyword+=?
 autocmd FileType ruby,eruby,yaml setlocal path+=lib
 autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
 autocmd FileType make setlocal noexpandtab
+
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+endif

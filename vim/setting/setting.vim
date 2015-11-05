@@ -1,6 +1,6 @@
 let mapleader = "\<Space>" " set new leader key
 
-colorscheme jellybeans    " set jellybeans as theme
+colorscheme jellybeans " set jellybeans as theme
 
 set relativenumber        " set relative number
 set numberwidth=3         " set smaller number width
@@ -16,11 +16,25 @@ set gdefault              " assume /g flag is on
 set nowrap                " disable wrap
 set pastetoggle=<F2>      " paste toggle
 set nocompatible
+set noshowmode
+set clipboard=unnamed
+
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+if exists("&undodir")
+  set undodir=~/.vim-tmp/undo//
+  set undofile
+endif
+
+" Airline
+let g:airline_powerline_fonts = 1
 
 " Highlight all search results
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+syntax on
+set hlsearch
 endif
 
 " Snippets
@@ -48,3 +62,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
+
+set guifont=Menlo:h14
