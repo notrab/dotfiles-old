@@ -40,7 +40,6 @@ autocmd FileType ruby,eruby,yaml setlocal colorcolumn=80
 autocmd FileType make setlocal noexpandtab
 
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
-endif
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
