@@ -1,6 +1,6 @@
 let mapleader = "\<Space>" " set new leader key
 
-colorscheme jellybeans " set jellybeans as theme
+colorscheme onedark " set jellybeans as theme
 
 set relativenumber        " set relative number
 set numberwidth=3         " set smaller number width
@@ -44,7 +44,7 @@ let g:snippetsEmu_key = "<S-Tab>"
 set wildignore+=tmp/**,*.scssc,*.sassc,*/bower_components/*,*/node_modules/*,*.jpg,*.png,*.gif,*.pdf
 
 " JSX
-let g:jsx_ext_required = 1
+let g:jsx_ext_required = 0
 
 " Error beeping
 set novisualbell

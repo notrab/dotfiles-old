@@ -1,19 +1,2 @@
 snippet base
         <base href="${1}" target="${2}"`Close()`>
-snippet head
-      	<head>
-      		<meta http-equiv="content-type" content="text/html; charset=utf-8"`Close()`>
-
-      		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
-      		${2}
-      	</head>
-snippet title
-        <title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
-snippet body
-      	<body>
-      		${1}
-      	</body>
-snippet div
-      	<div id="${1:name}">
-      		${2}
-      	</div>

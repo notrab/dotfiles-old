@@ -73,4 +73,3 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Restart Finder
 killall Finder
 
-fancy_echo "OS X defaults applied successfully."
