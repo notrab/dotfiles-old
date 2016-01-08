@@ -8,9 +8,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Show hidden files by default within Finder
-defaults write com.apple.finder AppleShowAllFiles -bool true
-
 # Never write .DS_Store files on Network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
@@ -39,14 +36,8 @@ mkdir -p ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots/
 killall SystemUIServer
 
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string “png”
-
 # Remove the awful screenshot shadow
 defaults write com.apple.screencapture disable-shadow -bool true
-
-# Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Use current directory as default search scope within Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
