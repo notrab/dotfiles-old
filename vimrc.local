@@ -3,9 +3,9 @@ source $HOME/.vim/setting/autocmd.vim
 
 let mapleader = "\<Space>" " set new leader key
 
-colorscheme base16-railscasts
-
-let base16colorspace=256
+colorscheme solarized
+set background=dark
+" syntax enable
 
 set relativenumber        " set relative number
 set numberwidth=3         " set smaller number width
@@ -68,8 +68,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
-
-set guifont=Menlo:h14
 
 source $HOME/.vim/setting/keymap.vim
 
