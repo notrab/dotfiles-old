@@ -3,8 +3,8 @@ source $HOME/.vim/setting/autocmd.vim
 
 let mapleader = "\<Space>" " set new leader key
 
-colorscheme solarized
-set background=dark
+colorscheme jellybeans
+" set background=dark
 " syntax enable
 
 set relativenumber        " set relative number
