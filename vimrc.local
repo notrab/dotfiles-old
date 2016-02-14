@@ -1,11 +1,8 @@
-source $HOME/.vim/setting/function.vim
-source $HOME/.vim/setting/autocmd.vim
-
 let mapleader = "\<Space>" " set new leader key
 
-colorscheme jellybeans
-" set background=dark
-" syntax enable
+colorscheme solarized
+set background=dark
+syntax enable
 
 set relativenumber        " set relative number
 set numberwidth=3         " set smaller number width
@@ -60,7 +57,7 @@ set errorbells
 
 " CtrlP
 let g:ctrlp_max_height = 20
-let g:ctrlp_working_path_mode = 0
+" let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
 
 " Syntastic
@@ -71,10 +68,11 @@ let g:syntastic_check_on_wq = 0
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
 
-source $HOME/.vim/setting/keymap.vim
-
-
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
+
+source $HOME/.vim/setting/keymap.vim
+source $HOME/.vim/setting/function.vim
+source $HOME/.vim/setting/autocmd.vim
